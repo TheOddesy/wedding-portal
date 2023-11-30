@@ -5,7 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f6f1e3;
 }
+
+/* color: #a42a04; venetian red
+color: #0000ff; blå */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
