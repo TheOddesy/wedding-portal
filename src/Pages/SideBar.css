@@ -1,0 +1,38 @@
+.sideBar {
+  position: fixed;
+  height: 100%;
+  width: 80px;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.verticalLine {
+  height: 30%;
+  width: 5px;
+  background-color: var(--venitianRed);
+  border-radius: 5px;
+}
+
+.menuItemsWrapper {
+  height: 260px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menuItem {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: var(--venitianRed);
+  transition: 0.5s;
+}
+.menuItem:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+}

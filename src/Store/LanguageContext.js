@@ -1,8 +1,7 @@
-import React, { createContext, useState, useEffect } from 'react';
-
+import React, {createContext, useState, useEffect} from 'react';
 
 const LanguageContext = createContext();
-const LanguageProvider = ({ children }) => {
+const LanguageProvider = ({children}) => {
   const [language, setLanguage] = useState('swe');
   const [languageData, setLanguageData] = useState({});
   useEffect(() => {
@@ -19,9 +18,9 @@ const LanguageProvider = ({ children }) => {
       .catch((error) => console.error('Error fetching language data:', error));
   };
   return (
-    <LanguageContext.Provider value={{ language, setLanguage,languageData }}>
+    <LanguageContext.Provider value={{language, setLanguage, languageData}}>
       {children}
     </LanguageContext.Provider>
   );
 };
-export { LanguageContext, LanguageProvider };
+export {LanguageContext, LanguageProvider};

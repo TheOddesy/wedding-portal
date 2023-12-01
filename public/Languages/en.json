@@ -1,9 +1,12 @@
 {
   "title": "Big Title",
+  "language": "English",
+  "languageChange": "Byt till svenska",
   "names": "nicolás and lovisa",
   "nicolas": "nicolás",
   "lovisa": "lovisa",
   "and": "and",
   "text": "This is some sample text.",
+  "secondaryTitle": "Secondary title",
   "smallsite": "This page is not supported for this size of screen, please use a bigger screen like an desktop computer or a tablet."
 }

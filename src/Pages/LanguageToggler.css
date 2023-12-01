@@ -1,0 +1,81 @@
+.lanugeTogglerWrapper {
+  height: fit-content;
+  width: 220px;
+  position: fixed;
+  top: 30px;
+  right: 5%;
+  display: flex;
+  align-items: center;
+}
+
+button:hover {
+  cursor: pointer;
+}
+/* LÖS DET HÄR FÖR DET NYA SOM INTE ÄR LÄNGRE EN BUTTON */
+/* När man gör sidan small så försvinner sub-titlarna till vänster av sidan måste ändra i max width och sånda saker i main*/
+
+.languageChange {
+  margin: 0 0 0 10px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--lightGrey);
+  border: 3px solid var(--venitianRed);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 24px;
+  width: 24px;
+  left: 3px;
+  bottom: 2px;
+  background-color: var(--venitianRed);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--grey);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(24px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
