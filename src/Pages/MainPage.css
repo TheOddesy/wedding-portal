@@ -9,28 +9,12 @@ font-family: cormorant-garamond;
 fettmarkerade saker för att markera sakera samt underrubriker
 font-family: source-sans-3; */
 
-@media screen and (max-width: 600px) {
-  .bigSite {
-    display: none;
-  }
-}
-
 .bigSite {
   min-width: 1200px;
   max-width: 1400px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-@media screen and (min-width: 600px) {
-  .smallSite {
-    display: none;
-  }
-}
-
-.spaceForTesting {
-  height: 800px;
 }
 
 /* --------------------------------------------------------- */
@@ -88,3 +72,28 @@ font-family: source-sans-3; */
 }
 
 /* --------------------------------------------------------- */
+
+.smallSite {
+  margin: 250px 40px;
+}
+
+/* --------------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  .bigSite {
+    display: none;
+  }
+  .sideBar {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .smallSite {
+    display: none;
+  }
+}
+
+.spaceForTesting {
+  height: 800px;
+}

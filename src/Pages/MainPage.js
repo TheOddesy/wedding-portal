@@ -44,25 +44,25 @@ const MainPage = () => {
         <div className='spaceForTesting'></div>
 
         <div ref={two} className='cormorant secondaryTitle'>
-          {languageData.secondaryTitle}2
+          {languageData.secondaryTitle}&nbsp;1
         </div>
         <div className='sourceSans'>{languageData.text}</div>
         <div className='spaceForTesting'></div>
 
         <div ref={three} className='cormorant secondaryTitle'>
-          {languageData.secondaryTitle}3
+          {languageData.secondaryTitle}&nbsp;2
         </div>
         <div className='sourceSans'>{languageData.text}</div>
         <div className='spaceForTesting'></div>
 
         <div ref={four} className='cormorant secondaryTitle'>
-          {languageData.secondaryTitle}4
+          {languageData.secondaryTitle}&nbsp;3
         </div>
         <div className='sourceSans'>{languageData.text}</div>
         <div className='spaceForTesting'></div>
 
         <div ref={five} className='cormorant secondaryTitle'>
-          {languageData.secondaryTitle}5
+          {languageData.secondaryTitle}&nbsp;4
         </div>
         <div className='sourceSans'>{languageData.text}</div>
         <div className='spaceForTesting'></div>

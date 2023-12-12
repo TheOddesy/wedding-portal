@@ -8,7 +8,7 @@ const LanguageToggler = () => {
     setLanguage(newLanguage);
   };
   return (
-    <div className='lanugeTogglerWrapper'>
+    <div className='languageTogglerWrapper'>
       <label className='switch'>
         <input type='checkbox' onClick={handleToggleLanguage} />
         <span className='slider round'></span>
