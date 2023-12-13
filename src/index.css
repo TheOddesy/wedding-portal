@@ -1,3 +1,6 @@
+@import url('https://use.typekit.net/khg7cxw.css');
+/* <link rel="stylesheet" href="https://use.typekit.net/khg7cxw.css"> */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
@@ -6,9 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   background-color: var(--background-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0 80px;
 }
 
 * {
@@ -23,6 +24,22 @@ body {
   --primaryBlue: #0000ff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+/* 
+title
+font-family: masqualero;
+title 'och' samt brödtext
+font-family: cormorant-garamond;
+fettmarkerade saker för att markera sakera samt underrubriker
+font-family: source-sans-3; */
+
+.masqualero {
+  font-family: masqualero;
+}
+
+.cormorant {
+  font-family: cormorant-garamond;
+}
+
+.sourceSans {
+  font-family: source-sans-3;
 }

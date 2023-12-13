@@ -26,6 +26,8 @@
 }
 
 .menuItem {
+  position: relative;
+  display: inline-block;
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -35,4 +37,27 @@
 .menuItem:hover {
   cursor: pointer;
   background-color: aquamarine;
+}
+/* Tooltip text */
+.menuItem .tooltip {
+  visibility: hidden;
+  width: fit-content;
+  height: 40px;
+  background-color: #00000090;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  left: 50px;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.menuItem:hover .tooltip {
+  visibility: visible;
 }

@@ -1,17 +1,9 @@
-@import url('https://use.typekit.net/khg7cxw.css');
-/* <link rel="stylesheet" href="https://use.typekit.net/khg7cxw.css"> */
-
-/* 
-title
-font-family: masqualero;
-title 'och' samt brödtext
-font-family: cormorant-garamond;
-fettmarkerade saker för att markera sakera samt underrubriker
-font-family: source-sans-3; */
-
 .bigSite {
-  min-width: 1200px;
+  background-color: #a42a0410;
+  min-width: 850px;
   max-width: 1400px;
+  margin: auto;
+  padding: 0 40px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -24,18 +16,6 @@ font-family: source-sans-3; */
   font-family: cormorant-garamond;
   font-family: source-sans-3;
   color: #a42a04;
-}
-
-.masqualero {
-  font-family: masqualero;
-}
-
-.cormorant {
-  font-family: cormorant-garamond;
-}
-
-.sourceSans {
-  font-family: source-sans-3;
 }
 
 /* --------------------------------------------------------- */

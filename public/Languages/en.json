@@ -6,7 +6,19 @@
   "nicolas": "nicolás",
   "lovisa": "lovisa",
   "and": "and",
+  "home": "Home",
+  "smallsite": "This page is not supported for this size of screen, please use a bigger screen like a laptop, a desktop computer or a tablet.",
+  "breaker1": "---------------------------",
+  "subtitle1": "The first subtitle",
+  "breaker2": "---------------------------",
+  "subtitle2": "The second subtitle",
+  "breaker3": "---------------------------",
+  "subtitle3": "The third subtitle",
+  "breaker4": "---------------------------",
+  "subtitle4": "The fourth subtitle",
+  "breaker5": "---------------------------",
+  "subtitle5": "The fifth subtitle",
+  "breakerExtra": "---------------------------",
   "text": "This is some sample text.",
-  "secondaryTitle": "Secondary title",
-  "smallsite": "This page is not supported for this size of screen, please use a bigger screen like a laptop, a desktop computer or a tablet."
+  "secondaryTitle": "Secondary title"
 }

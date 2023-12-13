@@ -6,7 +6,19 @@
   "nicolas": "nicolás",
   "lovisa": "lovisa",
   "and": "och",
+  "home": "Hem",
+  "smallsite": "Den här sidan visas inte för den här storleken på skärmen, snälla använd en större skärm som en laptop, stationär dator eller surfplatta.",
+  "breaker1": "---------------------------",
+  "subtitle1": "Den första under titeln",
+  "breaker2": "---------------------------",
+  "subtitle2": "Den andra under titeln",
+  "breaker3": "---------------------------",
+  "subtitle3": "Den tredje under titeln",
+  "breaker4": "---------------------------",
+  "subtitle4": "Den fjärde under titeln",
+  "breaker5": "---------------------------",
+  "subtitle5": "Den femte under titeln",
+  "breakerExtra": "---------------------------",
   "text": "Det här är lite vanlig text.",
-  "secondaryTitle": "En annan titel",
-  "smallsite": "Den här sidan visas inte för den här storleken på skärmen, snälla använd en större skärm som en laptop, stationär dator eller surfplatta."
+  "secondaryTitle": "En annan titel"
 }

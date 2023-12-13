@@ -1,7 +1,7 @@
 .languageTogglerWrapper {
   height: fit-content;
   width: 220px;
-  position: fixed;
+  position: absolute;
   top: 30px;
   right: 5%;
   display: flex;
