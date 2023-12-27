@@ -13,6 +13,7 @@ const MainPage = () => {
   const two = useRef(null);
   const three = useRef(null);
   const four = useRef(null);
+  const five = useRef(null);
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -30,6 +31,7 @@ const MainPage = () => {
         two={two}
         three={three}
         four={four}
+        five={five}
       />
       <LanguageToggler />
       <div className='smallSite'>{languageData.smallsite}</div>
@@ -66,29 +68,15 @@ const MainPage = () => {
         </div>
         <div className='sourceSans'>{languageData.text}</div>
         <div className='spaceForTesting'></div>
+
+        <div ref={five} className='cormorant secondaryTitle'>
+          {languageData.subtitle5}
+        </div>
+        <div className='sourceSans'>{languageData.text}</div>
+        <div className='spaceForTesting'></div>
       </div>
     </div>
   );
 };
 
 export default MainPage;
-
-// function MainPage() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <p>
-//           HEJ HEJ.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://hypoteket.se/"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           hypoteket
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
