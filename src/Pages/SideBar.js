@@ -11,19 +11,19 @@ const SideBar = ({scrollToSection, zero, one, two, three, four, five}) => {
           <div className='tooltip sourceSans'>{languageData.home}</div>
         </div>
         <div onClick={() => scrollToSection(one)} className='menuItem'>
-          <div className='tooltip sourceSans'>{languageData.subtitle1}</div>
+          <div className='tooltip sourceSans'>{languageData.subtitleToastmaster}</div>
         </div>
         <div onClick={() => scrollToSection(two)} className='menuItem'>
-          <div className='tooltip sourceSans'>{languageData.subtitle2}</div>
+          <div className='tooltip sourceSans'>{languageData.subtitleDressCode}</div>
         </div>
         <div onClick={() => scrollToSection(three)} className='menuItem'>
-          <div className='tooltip sourceSans'>{languageData.subtitle3}</div>
+          <div className='tooltip sourceSans'>{languageData.subtitleLiving}</div>
         </div>
         <div onClick={() => scrollToSection(four)} className='menuItem'>
-          <div className='tooltip sourceSans'>{languageData.subtitle4}</div>
+          <div className='tooltip sourceSans'>{languageData.subtitleGift}</div>
         </div>
         <div onClick={() => scrollToSection(five)} className='menuItem'>
-          <div className='tooltip sourceSans'>{languageData.subtitle5}</div>
+          <div className='tooltip sourceSans'>{languageData.subtitleAboutUs}</div>
         </div>
       </div>
       <div className='verticalLine'></div>

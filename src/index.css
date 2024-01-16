@@ -9,7 +9,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   background-color: var(--background-color);
-  padding: 0 80px;
 }
 
 * {

@@ -1,36 +1,33 @@
-.bigSite {
-  background-color: #a42a0410;
-  min-width: 850px;
-  max-width: 1400px;
-  margin: auto;
-  padding: 0 40px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-/* --------------------------------------------------------- */
+/* MIAN PAGE --------------------------------------------------------- */
 
 .mainPage {
   font-family: masqualero;
   font-family: cormorant-garamond;
   font-family: source-sans-3;
-  color: #a42a04;
+  color: var(--venitianRed);
 }
 
-/* --------------------------------------------------------- */
-
-.secondaryTitle {
-  font-size: 40px;
-}
-
-/* --------------------------------------------------------- */
-
-.titleWrapper {
-  margin: 30px 0 0 0;
+.site {
+  background-color: #a42a0401;
+  min-width: 350px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
   display: flex;
   justify-content: center;
-  height: fit-content;
+  flex-direction: column;
+  position: relative;
+}
+
+/* TOP OF THE PAGE --------------------------------------------------------- */
+
+.titleWrapper {
+  display: flex;
+  justify-content: center;
+  height: 180px;
+  width: 310px;
+  flex-direction: column;
+  position: relative;
 }
 
 .mainTitle {
@@ -44,36 +41,253 @@
 
 .mainTitleAnd {
   display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 30px;
   text-transform: uppercase;
   letter-spacing: 10px;
 }
 
-/* --------------------------------------------------------- */
-
-.smallSite {
-  margin: 250px 40px;
+.titleNicolas {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-/* --------------------------------------------------------- */
+.titleAnd {
+  position: absolute;
+  left: 106px;
+  top: 70px;
+}
 
-@media screen and (max-width: 600px) {
-  .bigSite {
-    display: none;
+.titleLovisa {
+  position: absolute;
+  left: 22px;
+  top: 120px;
+}
+
+.titlePictureWrapper {
+  margin: 100px 0 30px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* SECONDARY TITLES --------------------------------------------------------- */
+
+.secondaryTitle {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* TEXT --------------------------------------------------------- */
+
+.textWrapper {
+  max-width: 600px;
+}
+
+.textWrapperTimeline {
+  width: 100%;
+  max-width: 400px;
+  font-size: 18px;
+  margin: 0 0 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* PICTURE TITLE--------------------------------------------------------- */
+
+.pictureTitleWrapper {
+  overflow: hidden;
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+}
+
+.pictureTitle {
+  height: 400px;
+  width: 400px;
+}
+
+/* PICTURES --------------------------------------------------------- */
+
+.timelineWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.pictureWrapper {
+  overflow: hidden;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  margin: 0 0 20px 0;
+}
+
+.picture {
+  height: 300px;
+  width: 300px;
+}
+
+.dottedCircle {
+  margin: 0;
+  background: transparent;
+  border: 3px dashed black;
+}
+
+.marginOnTopOfText {
+  margin: 100px 0 20px 0;
+}
+
+/* MEDIA --------------------------------------------------------- */
+
+/* när skärmen är mindre än 1100px, bilden blir mindre */
+@media screen and (max-width: 1100px) {
+  .pictureTitleWrapper {
+    height: 260px;
+    width: 260px;
   }
+  .pictureTitle {
+    height: 260px;
+    width: 260px;
+  }
+}
+/* när skärmen är mindre än 900px, bilden flyttar under */
+@media screen and (max-width: 900px) {
+  .titlePictureWrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .pictureTitleWrapper {
+    margin: 50px 0 0 0;
+  }
+}
+
+/* när skärmen är mindre än 600px, ta bort sidebar */
+@media screen and (max-width: 600px) {
   .sideBar {
     display: none !important;
   }
 }
 
+/* när skärmen är större än 600px, mobile first developement */
 @media screen and (min-width: 600px) {
-  .smallSite {
-    display: none;
+  .site {
+    padding: 0 80px;
+  }
+  .titleWrapper {
+    width: 480px;
+  }
+  .titleAnd {
+    left: 220px;
+  }
+  .titleLovisa {
+    left: 220px;
+  }
+}
+/* när skärmen är större än 1100px, timelinen blir linjär */
+@media screen and (min-width: 1100px) {
+  .timelineWrapper {
+    position: relative;
+    border: 1px solid red;
+  }
+
+  .timelineLine {
+    width: 2px;
+    background: black;
+    height: 3000px;
+    border-radius: 5px;
+    margin: 0 auto 200px;
+  }
+
+  .textWrapperTimeline {
+    width: fit-content;
+    position: absolute;
+    margin: 0;
+  }
+
+  .pictureWrapper {
+    position: absolute;
+    margin: 0;
+  }
+
+  .textOne {
+    top: 0;
+    left: 0;
+  }
+  .textTwo {
+    top: 0;
+    left: 0;
+  }
+  .textThree {
+    top: 0;
+    left: 0;
+  }
+  .textFour {
+    top: 0;
+    left: 0;
+  }
+  .textFive {
+    top: 0;
+    left: 0;
+  }
+  .pictureOne {
+    top: 0;
+    left: 0;
+  }
+  .pictureTwo {
+    top: 0;
+    left: 0;
+  }
+  .pictureThree {
+    top: 0;
+    left: 0;
+  }
+  .pictureFour {
+    top: 0;
+    left: 0;
+  }
+  .pictureFive {
+    top: 0;
+    left: 0;
+  }
+  .pictureSix {
+    top: 0;
+    left: 0;
+  }
+  .pictureSeven {
+    top: 0;
+    left: 0;
+  }
+  .dottedCircle {
+    top: 0;
+    left: 0;
   }
 }
 
-.spaceForTesting {
-  height: 800px;
+/* CONSTANTS --------------------------------------------------------- */
+
+.spaceBetweenChapters {
+  height: 80px;
+}
+
+.inline {
+  display: inline;
+  /* ha detta på båda linjerna du vill ha i samma linje */
+}
+
+.spaceAfterParagraph {
+  margin-bottom: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: var(--venitianRed);
+  text-decoration: underline;
 }

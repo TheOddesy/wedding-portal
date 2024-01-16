@@ -1,9 +1,9 @@
 .languageTogglerWrapper {
   height: fit-content;
-  width: 220px;
+  width: fit-content;
   position: absolute;
   top: 30px;
-  right: 5%;
+  right: 20px;
   display: flex;
   align-items: center;
 }
@@ -15,9 +15,9 @@ button:hover {
 /* När man gör sidan small så försvinner sub-titlarna till vänster av sidan måste ändra i max width och sånda saker i main*/
 
 .languageChange {
-  margin: 0 0 0 10px;
+  margin: 0 10px 0 0;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* The switch - the box around the slider */
@@ -62,7 +62,7 @@ button:hover {
 }
 
 input:checked + .slider {
-  background-color: var(--grey);
+  background-color: var(--lightGrey);
 }
 
 input:checked + .slider:before {
