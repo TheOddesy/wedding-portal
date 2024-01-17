@@ -8,7 +8,7 @@
 }
 
 .site {
-  background-color: #a42a0401;
+  /* background-color: #a42a0499; */
   min-width: 350px;
   max-width: 1200px;
   margin: auto;
@@ -166,14 +166,14 @@
 }
 
 /* när skärmen är mindre än 600px, ta bort sidebar */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .sideBar {
     display: none !important;
   }
 }
 
 /* när skärmen är större än 600px, mobile first developement */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .site {
     padding: 0 80px;
   }
@@ -188,18 +188,17 @@
   }
 }
 /* när skärmen är större än 1100px, timelinen blir linjär */
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 900px) {
   .timelineWrapper {
     position: relative;
-    border: 1px solid red;
   }
 
   .timelineLine {
-    width: 2px;
-    background: black;
-    height: 3000px;
+    width: 1px;
+    background: var(--venitianRed);
+    height: 2300px;
     border-radius: 5px;
-    margin: 0 auto 200px;
+    margin: 0 auto 100px;
   }
 
   .textWrapperTimeline {
@@ -213,57 +212,59 @@
     margin: 0;
   }
 
+  /* -------------- */
   .textOne {
-    top: 0;
-    left: 0;
+    top: 100px;
+    left: 55%;
   }
   .textTwo {
-    top: 0;
-    left: 0;
+    top: 850px;
+    right: 55%;
   }
   .textThree {
-    top: 0;
-    left: 0;
+    top: 1150px;
+    left: 55%;
   }
   .textFour {
-    top: 0;
-    left: 0;
+    top: 1700px;
+    left: 55%;
   }
   .textFive {
-    top: 0;
-    left: 0;
+    top: 2000px;
+    right: 55%;
   }
+  /* -------------- */
   .pictureOne {
     top: 0;
-    left: 0;
+    right: 55%;
   }
   .pictureTwo {
-    top: 0;
-    left: 0;
+    top: 250px;
+    left: 55%;
   }
   .pictureThree {
-    top: 0;
-    left: 0;
+    top: 350px;
+    right: 55%;
   }
   .pictureFour {
-    top: 0;
-    left: 0;
+    top: 700px;
+    left: 55%;
   }
   .pictureFive {
-    top: 0;
-    left: 0;
+    top: 1000px;
+    right: 55%;
   }
   .pictureSix {
-    top: 0;
-    left: 0;
+    top: 1250px;
+    left: 55%;
   }
   .pictureSeven {
-    top: 0;
-    left: 0;
+    top: 1550px;
+    right: 55%;
   }
   .dottedCircle {
-    top: 0;
-    left: 0;
+    top: 1900px;
+    left: 55%;
   }
 }
 
