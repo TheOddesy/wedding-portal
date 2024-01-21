@@ -1,9 +1,6 @@
-/* MIAN PAGE --------------------------------------------------------- */
+/* MAIN PAGE --------------------------------------------------------- */
 
 .mainPage {
-  font-family: masqualero;
-  font-family: cormorant-garamond;
-  font-family: source-sans-3;
   color: var(--venitianRed);
 }
 
@@ -24,7 +21,7 @@
 .titleWrapper {
   display: flex;
   justify-content: center;
-  height: 180px;
+  height: 200px;
   width: 310px;
   flex-direction: column;
   position: relative;
@@ -33,7 +30,7 @@
 .mainTitle {
   font-size: 50px;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 8px;
   font-family: masqualero, sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -54,14 +51,17 @@
 
 .titleAnd {
   position: absolute;
-  left: 106px;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 900;
+  left: 132px;
   top: 70px;
 }
 
 .titleLovisa {
   position: absolute;
-  left: 22px;
-  top: 120px;
+  left: 26px;
+  top: 140px;
 }
 
 .titlePictureWrapper {
@@ -75,7 +75,10 @@
 /* SECONDARY TITLES --------------------------------------------------------- */
 
 .secondaryTitle {
-  font-size: 40px;
+  scroll-padding-top: 300px;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1px;
   margin-bottom: 20px;
 }
 
@@ -88,7 +91,6 @@
 .textWrapperTimeline {
   width: 100%;
   max-width: 400px;
-  font-size: 18px;
   margin: 0 0 20px 0;
   display: flex;
   justify-content: center;
@@ -134,7 +136,15 @@
 .dottedCircle {
   margin: 0;
   background: transparent;
-  border: 3px dashed black;
+  border: 2px dashed transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heartEmoji {
+  height: 160px;
+  width: 160px;
 }
 
 .marginOnTopOfText {
@@ -144,7 +154,7 @@
 /* MEDIA --------------------------------------------------------- */
 
 /* när skärmen är mindre än 1100px, bilden blir mindre */
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
   .pictureTitleWrapper {
     height: 260px;
     width: 260px;
@@ -155,7 +165,7 @@
   }
 }
 /* när skärmen är mindre än 900px, bilden flyttar under */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .titlePictureWrapper {
     flex-direction: column;
     justify-content: center;
@@ -175,13 +185,13 @@
 /* när skärmen är större än 600px, mobile first developement */
 @media screen and (min-width: 700px) {
   .site {
-    padding: 0 80px;
+    padding: 0 120px 0 120px;
   }
   .titleWrapper {
     width: 480px;
   }
   .titleAnd {
-    left: 220px;
+    left: 244px;
   }
   .titleLovisa {
     left: 220px;
@@ -194,7 +204,7 @@
   }
 
   .timelineLine {
-    width: 1px;
+    width: 2px;
     background: var(--venitianRed);
     height: 2300px;
     border-radius: 5px;
@@ -263,7 +273,7 @@
     right: 55%;
   }
   .dottedCircle {
-    top: 1900px;
+    top: 1880px;
     left: 55%;
   }
 }

@@ -5,45 +5,44 @@
   top: 0;
   left: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.verticalLine {
-  height: 30vh;
-  width: 1px;
-  background-color: var(--venitianRed);
-  border-radius: 5px;
 }
 
 .menuItemsWrapper {
-  height: 260px;
+  height: 400px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  margin-top: 40px;
 }
 
 .menuItem {
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-color: var(--venitianRed);
   transition: 0.2s;
 }
 .menuItem:hover {
   cursor: pointer;
-  background-color: var(--sideBarHover);
+  background-color: transparent;
   box-shadow: 0px 0px 5px black;
 }
 
 .menuItem:active {
   cursor: pointer;
-  background-color: var(--sideBarHover);
+  background-color: transparent;
   box-shadow: 0px 0px 3px black;
+}
+.icon {
+  height: 30px;
+  width: 30px;
 }
 
 /* Tooltip text */

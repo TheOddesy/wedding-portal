@@ -7,7 +7,15 @@ import './MainPage.css';
 import './SideBar.css';
 import './LanguageToggler.css';
 import './FormButton.css';
-import titlePicture from '../assets/IMG_0069.JPG';
+import usa from '../assets/usa.jpg';
+import nollning from '../assets/nollning.jpg';
+import nollegasque from '../assets/nollegasque.jpg';
+import sittning from '../assets/sittning.jpg';
+import lund from '../assets/lund.jpg';
+import examen from '../assets/examen.jpg';
+import flytt from '../assets/flytt.jpg';
+import malmo from '../assets/malmo.jpg';
+import {LiaKissWinkHeartSolid} from 'react-icons/lia';
 
 const MainPage = () => {
   const {languageData} = useContext(LanguageContext);
@@ -47,22 +55,28 @@ const MainPage = () => {
             <div className='masqualero mainTitle titleLovisa'>{languageData.lovisa}</div>
           </div>
           <div className='pictureTitleWrapper'>
-            <img src={titlePicture} alt='The two of us together' className='pictureTitle' />
+            <img src={usa} alt='The two of us together' className='pictureTitle' />
           </div>
         </div>
         <div className='textWrapper sourceSans'>
           <div className='inline'>{languageData.introduction1} </div>
-          <div className='bold inline'>{languageData.introductionDate} </div>
-          <div className='inline'>{languageData.introduction2} </div>
-          <div className='bold inline'>{languageData.introductionTime}</div>
+          <div className='bold inline'>{languageData.introductionDate}</div>
           <div className='spaceAfterParagraph'></div>
-          <div className='inline'>{languageData.introduction3} </div>
+
+          <div className='inline'>{languageData.introduction2} </div>
           <a href='https://hypoteket.se/' rel='noreferrer' target='_blank' className='bold inline'>
             {languageData.introductionAdress}
           </a>
+          <div className='inline'> {languageData.introduction3} </div>
+          <div className='bold inline'>{languageData.introductionTime}</div>
           <div className='spaceAfterParagraph'></div>
+
+          <div className=''>{languageData.introductionBar}</div>
+          <div className='spaceAfterParagraph'></div>
+
           <div className=''>{languageData.introduction4}</div>
           <div className='spaceAfterParagraph'></div>
+
           <div className='inline'>{languageData.introduction5} </div>
           <div className='inline bold'>{languageData.introductionRSVP} </div>
           <div className='inline'>{languageData.introduction6}</div>
@@ -70,18 +84,17 @@ const MainPage = () => {
         <FormButton></FormButton>
         <div className='spaceBetweenChapters'></div>
         {/* TOATMASTER ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */}
-        <div ref={one} className='cormorant secondaryTitle'>
+        <div ref={one} className='sourceSans secondaryTitle'>
           {languageData.subtitleToastmaster}
         </div>
         <div className='textWrapper sourceSans'>
-          <div className=''>{languageData.toastmaster1}</div>
-          <div className='spaceAfterParagraph'></div>
-          <div className='inline'>{languageData.toastmaster2} </div>
+          <div className='inline'>{languageData.toastmaster1}</div>
+          <div className='inline'> {languageData.toastmaster2} </div>
           <div className='inline bold'>{languageData.toastmasterMail}</div>
         </div>
         <div className='spaceBetweenChapters'></div>
         {/* DRESSCODE ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */}
-        <div ref={two} className='cormorant secondaryTitle'>
+        <div ref={two} className='sourceSans secondaryTitle'>
           {languageData.subtitleDressCode}
         </div>
         <div className='textWrapper sourceSans'>
@@ -89,7 +102,7 @@ const MainPage = () => {
         </div>
         <div className='spaceBetweenChapters'></div>
         {/* LIVING ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */}
-        <div ref={three} className='cormorant secondaryTitle'>
+        <div ref={three} className='sourceSans secondaryTitle'>
           {languageData.subtitleLiving}
         </div>
         <div className='textWrapper sourceSans'>
@@ -103,7 +116,7 @@ const MainPage = () => {
             rel='noreferrer'
             target='_blank'
             className='inline bold'>
-            Grand Hotell
+            Grand Hotel
           </a>
           <div className='inline'> {languageData.living3}</div>
           <div className='spaceAfterParagraph'></div>
@@ -112,17 +125,18 @@ const MainPage = () => {
         </div>
         <div className='spaceBetweenChapters'></div>
         {/* WEDDING GIFTS----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */}
-        <div ref={four} className='cormorant secondaryTitle'>
+        <div ref={four} className='sourceSans secondaryTitle'>
           {languageData.subtitleGift}
         </div>
         <div className='textWrapper sourceSans'>
           <div className=''>{languageData.gift1}</div>
           <div className='spaceAfterParagraph'></div>
-          <div className=''>{languageData.gift2}</div>
+          <div className='inline'>{languageData.gift2} </div>
+          <div className='inline bold'>{languageData.gift3}</div>
         </div>
         <div className='spaceBetweenChapters'></div>
         {/* ABOUT US----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */}
-        <div ref={five} className='cormorant secondaryTitle'>
+        <div ref={five} className='sourceSans secondaryTitle'>
           {languageData.subtitleAboutUs}
         </div>
         <div className='textWrapper sourceSans'>
@@ -132,8 +146,6 @@ const MainPage = () => {
           <div className='spaceAfterParagraph'></div>
           <div className=''>{languageData.aboutUs3}</div>
           <div className='spaceAfterParagraph'></div>
-          <div className=''>{languageData.aboutUs4}</div>
-          <div className='spaceAfterParagraph'></div>
           <div className=''>{languageData.aboutUs5}</div>
         </div>
         <div className='spaceBetweenChapters'></div>
@@ -142,13 +154,13 @@ const MainPage = () => {
           {/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */}
           <div className='textWrapperTimeline textOne'>{languageData.timeline1}</div>
           <div className='pictureWrapper pictureOne'>
-            <img src={titlePicture} alt='The two of us together' className='picture' />
+            <img src={nollning} alt='The two of us together' className='picture' />
           </div>
           <div className='pictureWrapper pictureTwo'>
-            <img src={titlePicture} alt='The two of us together' className='picture' />
+            <img src={nollegasque} alt='The two of us together' className='picture' />
           </div>
           <div className='pictureWrapper pictureThree'>
-            <img src={titlePicture} alt='The two of us together' className='picture' />
+            <img src={sittning} alt='The two of us together' className='picture' />
           </div>
           {/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */}
 
@@ -156,7 +168,7 @@ const MainPage = () => {
             {languageData.timeline2}
           </div>
           <div className='pictureWrapper pictureFour'>
-            <img src={titlePicture} alt='The two of us together' className='picture' />
+            <img src={lund} alt='The two of us together' className='picture' />
           </div>
           {/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */}
 
@@ -164,10 +176,10 @@ const MainPage = () => {
             {languageData.timeline3}
           </div>
           <div className='pictureWrapper pictureFive'>
-            <img src={titlePicture} alt='The two of us together' className='picture' />
+            <img src={examen} alt='The two of us together' className='picture' />
           </div>
           <div className='pictureWrapper pictureSix'>
-            <img src={titlePicture} alt='The two of us together' className='picture' />
+            <img src={flytt} alt='The two of us together' className='picture' />
           </div>
           {/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */}
 
@@ -175,14 +187,16 @@ const MainPage = () => {
             {languageData.timeline4}
           </div>
           <div className='pictureWrapper pictureSeven'>
-            <img src={titlePicture} alt='The two of us together' className='picture' />
+            <img src={malmo} alt='The two of us together' className='picture' />
           </div>
           {/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */}
 
           <div className='textWrapperTimeline marginOnTopOfText textFive'>
             {languageData.timeline5}
           </div>
-          <div className='pictureWrapper dottedCircle' />
+          <div className='pictureWrapper dottedCircle'>
+            <LiaKissWinkHeartSolid className='heartEmoji' />
+          </div>
         </div>
         <div className='spaceBetweenChapters'></div>
       </div>
