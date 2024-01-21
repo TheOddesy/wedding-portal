@@ -1,14 +1,21 @@
 {
   "files": {
-    "main.css": "/wedding-portal/static/css/main.2970ca19.css",
-    "main.js": "/wedding-portal/static/js/main.87d3db59.js",
-    "static/media/IMG_0069.JPG": "/wedding-portal/static/media/IMG_0069.1e93ed58df2b91ba1669.JPG",
+    "main.css": "/wedding-portal/static/css/main.791ceb24.css",
+    "main.js": "/wedding-portal/static/js/main.50375d7d.js",
+    "static/media/flytt.jpg": "/wedding-portal/static/media/flytt.a59a9930379806d3c35e.jpg",
+    "static/media/usa.jpg": "/wedding-portal/static/media/usa.c5d0e50c639218f8f198.jpg",
+    "static/media/malmo.jpg": "/wedding-portal/static/media/malmo.0020e5500d2954643b94.jpg",
+    "static/media/nollning.jpg": "/wedding-portal/static/media/nollning.bcecb40bbd0cd223b2ec.jpg",
+    "static/media/nollegasque.jpg": "/wedding-portal/static/media/nollegasque.351454ef146c437d7552.jpg",
+    "static/media/examen.jpg": "/wedding-portal/static/media/examen.0102f06a701f637cbc12.jpg",
+    "static/media/lund.jpg": "/wedding-portal/static/media/lund.322ef785905005e46cc2.jpg",
+    "static/media/sittning.jpg": "/wedding-portal/static/media/sittning.1e93ed58df2b91ba1669.jpg",
     "index.html": "/wedding-portal/index.html",
-    "main.2970ca19.css.map": "/wedding-portal/static/css/main.2970ca19.css.map",
-    "main.87d3db59.js.map": "/wedding-portal/static/js/main.87d3db59.js.map"
+    "main.791ceb24.css.map": "/wedding-portal/static/css/main.791ceb24.css.map",
+    "main.50375d7d.js.map": "/wedding-portal/static/js/main.50375d7d.js.map"
   },
   "entrypoints": [
-    "static/css/main.2970ca19.css",
-    "static/js/main.87d3db59.js"
+    "static/css/main.791ceb24.css",
+    "static/js/main.50375d7d.js"
   ]
 }
