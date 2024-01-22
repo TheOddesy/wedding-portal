@@ -12,7 +12,7 @@ const LanguageProvider = ({children}) => {
     fetchLanguageData();
   }, [language]);
   const fetchLanguageData = () => {
-    const dataUrl = `https://theoddesy.github.io/wedding-portal/Languages/${language}.json`;
+    const dataUrl = `http://www.nicolaslovisa.wedding/Languages/${language}.json`;
     fetch(dataUrl)
       .then((response) => response.json())
       .then((data) => setLanguageData(data))

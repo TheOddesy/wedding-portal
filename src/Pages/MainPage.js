@@ -108,7 +108,7 @@ const MainPage = () => {
         <div className='textWrapper sourceSans'>
           <div className='inline'>{languageData.living1} </div>
           <a href='https://www.lundia.se/' rel='noreferrer' target='_blank' className='inline bold'>
-            Hotel Lundia
+            HOTEL LUNDIA
           </a>
           <div className='inline'> {languageData.living2} </div>
           <a
@@ -116,7 +116,7 @@ const MainPage = () => {
             rel='noreferrer'
             target='_blank'
             className='inline bold'>
-            Grand Hotel
+            GRAND HOTEL
           </a>
           <div className='inline'> {languageData.living3}</div>
           <div className='spaceAfterParagraph'></div>
@@ -151,6 +151,12 @@ const MainPage = () => {
         <div className='spaceBetweenChapters'></div>
         <div className='timelineWrapper sourceSans'>
           <div className='timelineLine'></div>
+          <div className='timelinePlupp pluppOne'></div>
+          <div className='timelinePlupp pluppTwo'></div>
+          <div className='timelinePlupp pluppThree'></div>
+          <div className='timelinePlupp pluppFour'></div>
+          <div className='timelinePlupp pluppFive'></div>
+
           {/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */}
           <div className='textWrapperTimeline textOne'>{languageData.timeline1}</div>
           <div className='pictureWrapper pictureOne'>
