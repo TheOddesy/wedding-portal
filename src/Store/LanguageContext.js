@@ -12,7 +12,7 @@ const LanguageProvider = ({children}) => {
     fetchLanguageData();
   }, [language]);
   const fetchLanguageData = () => {
-    const dataUrl = `http://nicolaslovisa.wedding/languages/${language}.json`;
+    const dataUrl = `https://nicolaslovisa.wedding/languages/${language}.json`;
     fetch(dataUrl)
       .then((response) => response.json())
       .then((data) => setLanguageData(data))
