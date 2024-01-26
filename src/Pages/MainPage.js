@@ -15,6 +15,7 @@ import lund from '../assets/lund.jpg';
 import examen from '../assets/examen.jpg';
 import flytt from '../assets/flytt.jpg';
 import malmo from '../assets/malmo.jpg';
+import forlovning from '../assets/forlovning.jpg';
 import {LiaKissWinkHeartSolid} from 'react-icons/lia';
 
 const MainPage = () => {
@@ -51,7 +52,7 @@ const MainPage = () => {
         <div className='titlePictureWrapper'>
           <div className='titleWrapper'>
             <div className='masqualero mainTitle titleNicolas'>{languageData.nicolas}</div>
-            <div className='cormorant mainTitleAnd titleAnd'>{languageData.and}</div>
+            <div className='cormorant titleAnd'>{languageData.and}</div>
             <div className='masqualero mainTitle titleLovisa'>{languageData.lovisa}</div>
           </div>
           <div className='pictureTitleWrapper'>
@@ -156,6 +157,7 @@ const MainPage = () => {
           <div className='timelinePlupp pluppThree'></div>
           <div className='timelinePlupp pluppFour'></div>
           <div className='timelinePlupp pluppFive'></div>
+          <div className='timelinePlupp pluppSix'></div>
 
           {/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */}
           <div className='textWrapperTimeline textOne'>{languageData.timeline1}</div>
@@ -196,9 +198,16 @@ const MainPage = () => {
             <img src={malmo} alt='The two of us together' className='picture' />
           </div>
           {/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */}
-
           <div className='textWrapperTimeline marginOnTopOfText textFive'>
             {languageData.timeline5}
+          </div>
+          <div className='pictureWrapper pictureEight'>
+            <img src={forlovning} alt='The two of us together' className='picture' />
+          </div>
+          {/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */}
+
+          <div className='textWrapperTimeline marginOnTopOfText textSix'>
+            {languageData.timeline6}
           </div>
           <div className='pictureWrapper dottedCircle'>
             <LiaKissWinkHeartSolid className='heartEmoji' />

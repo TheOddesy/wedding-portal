@@ -27,4 +27,4 @@ const LanguageProvider = ({children}) => {
 export {LanguageContext, LanguageProvider};
 // const dataUrl = `http://localhost:3000/languages/${language}.json`;
 // const dataUrl = `https://theoddesy.github.io/wedding-portal/languages/${language}.json`;
-// const dataUrl = `http://nicolaslovisa.wedding/languages/${language}.json`;
+// const dataUrl = `https://nicolaslovisa.wedding/languages/${language}.json`;
