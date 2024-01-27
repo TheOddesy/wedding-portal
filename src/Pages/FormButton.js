@@ -9,7 +9,8 @@ const FormButton = () => {
       rel='noreferrer'
       target='_blank'
       className=' sourceSans formButton'>
-      <div className='formText'>{languageData.linkToForm}</div>
+      <div className='formText rsvp'>{languageData.linkToForm}</div>
+      <div className='formText here'>{languageData.here}</div>
     </a>
   );
 };
